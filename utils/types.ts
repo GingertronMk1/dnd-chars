@@ -1,13 +1,18 @@
+type Statistic = {
+  value: Number,
+  modifier: Number
+}
+
 type Character = {
-  name: String,
-  class: String,
-  subclass: String,
+  name: string,
+  class: string,
+  subclass: string,
   stats: {
-    intelligence: Number,
-    wisdom: Number,
-    charisma: Number,
-    strength: Number,
-    dexterity: Number,
-    constitution: Number
+    intelligence: Statistic,
+    wisdom: Statistic,
+    charisma: Statistic,
+    strength: Statistic,
+    dexterity: Statistic,
+    constitution: Statistic
   }
 }
