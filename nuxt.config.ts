@@ -2,5 +2,8 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content'
-  ]
+  ],
+  typescript: {
+    strict: true
+  }
 })

@@ -1,5 +1,13 @@
 {
   "name": "Gimble Daergal",
   "class": "Druid",
-  "subclass": "Circle of the Forest"
+  "subclass": "Circle of the Forest",
+  "stats": {
+    "strength": 12,
+    "dexterity": 13,
+    "constitution": 14,
+    "intelligence": 11,
+    "wisdom": 17,
+    "charisma": 11
+  }
 }
