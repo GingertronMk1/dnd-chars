@@ -1,18 +1,19 @@
 type Statistic = {
-  value: Number,
-  modifier: Number
+  value: number,
+  modifier: number,
+  displayModifier: string
+}
+
+type Statistics = {
+  [index: string]: Statistic
 }
 
 type Character = {
   name: string,
   class: string,
   subclass: string,
-  stats: {
-    intelligence: Statistic,
-    wisdom: Statistic,
-    charisma: Statistic,
-    strength: Statistic,
-    dexterity: Statistic,
-    constitution: Statistic
+  stats: Statistics,
+  proficiencies: {
+    [index: string]: boolean
   }
 }

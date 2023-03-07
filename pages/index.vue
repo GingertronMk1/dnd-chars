@@ -4,7 +4,7 @@ const { data } = await useAsyncData(() =>  queryContent().find());
 
 const computedData = computed(() => {
   return data?.value?.map((character) => {
-    character.link = `/characters/${character._path?.split("/").pop()}`;
+    character.link = `/${character._path?.split("/").pop()}`;
     return character;
   })
 })
